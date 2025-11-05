@@ -1,0 +1,38 @@
+PoC:
+Prosta aplikacja demonstrująca, że AI potrafi analizować dane pogodowe z emulowanej stacji i generować krótkie rekomendacje dotyczące prac rolniczych.
+
+Pomysły na nazwy StartUp'a: AgroMind, MeteoBrain, FieldSense, AgroPulse, WeatherLink.AI
+Pomysły na nazwy praktyczne, żeby brzmieli dobrze wśród rolników: Mądra Stacja, AgroStrażnik
+
+Aplikacja – AgroStrażnik.AI (MVP)
+
+### Główny problem:
+Rolnicy i właściciele pól często nie mają łatwego dostępu do lokalnych prognoz i analiz warunków pogodowych w oparciu o konkretne lokalizacje.
+Aplikacja AgroStrażnik.AI umożliwia dodanie „wirtualnych stacji pogodowych”, które analizują dane z otwartych źródeł (np. OpenWeatherMap) i generują inteligentne rekomendacje dla użytkownika za pomocą AI.
+
+### Najmniejszy zestaw funkcjonalności (MVP):
+1. Rejestracja i logowanie użytkownika (auth, JWT lub session).
+2. CRUD dla stacji pogodowych:
+	1) dodawanie stacji (nazwa, lokalizacja),
+	2) lista stacji,
+	3) edycja i usuwanie.
+3. Pobieranie danych pogodowych z otwartego API (np. OpenWeatherMap).
+4. Generowanie przez AI rekomendacji lub krótkich opisów sytuacji pogodowej (np. przez API OpenAI).
+5. Prosty dashboard z listą stacji, danymi pogodowymi i rekomendacją AI.
+6. Test jednostkowy logiki rekomendacji lub test e2e przepływu (dodaj stację → pobierz dane → wygeneruj opis).
+7. CI/CD przez GitHub Actions (np. automatyczne testy przy pushu).
+
+### Co NIE wchodzi w zakres MVP:
+1. Brak obsługi fizycznych stacji pogodowych.
+2. Brak MQTT i komunikacji z IoT.
+3. Brak mapy i złożonych wykresów historycznych.
+4. Brak płatności lub systemu subskrypcji.
+5. Brak zaawansowanego planera rolniczego.
+
+### Kryteria sukcesu
+1. Użytkownik może się zalogować i dodać własne „wirtualne” stacje.
+2. System poprawnie pobiera dane pogodowe z zewnętrznego API.
+3. AI generuje spójny, sensowny komentarz (np. „Dziś niska wilgotność, oprysk niezalecany”).
+4. Testy CI/CD przechodzą poprawnie.
+5. Aplikacja działa stabilnie na lokalnym lub publicznym serwerze.
+

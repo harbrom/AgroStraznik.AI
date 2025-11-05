@@ -1,0 +1,46 @@
+MVP
+PRD
+PostgreSQL 
+Supabase 
+REST API
+DTOs
+iteracyjne podejście 3x3
+React
+Astro
+Tailwind CSS
+shadcn/ui
+LLM
+OpenRouter
+CRUD
+
+Supabase Auth
+Test Plan
+Vitest 
+testy end-to-end
+Playwright
+react-hook-form
+Zod 
+Row-Level Security (RLS)
+GitHub Actions
+Continuous Integration (CI)
+Continuous Deployment (CD)
+Cloudflare 
+Dockerem 
+Digital Ocean
+
+legacy 
+brownfield
+Excalidraw
+multimodalne AI
+Playwright
+Event Storming
+Domain-Driven Design (DDD)
+
+in-context learning
+llms.txt
+Model Context Protocol (MCP)
+TypeScript na Cloudflare Workers
+Claude Agent SDK
+Promptfoo 
+evals
+suity testów dla LLMów
