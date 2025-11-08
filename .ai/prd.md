@@ -69,7 +69,7 @@ AgroStrażnik.AI rozwiązuje ten problem, umożliwiając:
   - error rate > 1% w ciągu godziny,
   - timeoutach > 5%.
 - Retry i cache awaryjny w przypadku błędów API.
-- SLA: uptime 99%, czas generowania rekomendacji <5 s średnio.
+- SLA: uptime 99%, czas generowania rekomendacji <60 s średnio.
 
 ### 3.9 CI/CD i testy
 - GitHub Actions do automatycznych testów i deploymentu.
@@ -89,7 +89,7 @@ AgroStrażnik.AI rozwiązuje ten problem, umożliwiając:
 4. Brak systemu płatności i subskrypcji.
 5. Brak obsługi wielu stref czasowych (tylko Polska).
 6. Brak zaawansowanego planera działań rolniczych.
-7. Brak systemu backupów (zaplanowane w kolejnych etapach).
+7. Brak systemu backupów.
 
 ---
 
@@ -130,7 +130,7 @@ Jako użytkownik chcę zobaczyć listę moich stacji z aktualnymi danymi pogodow
 Jako użytkownik chcę otrzymać krótką rekomendację AI na podstawie danych pogodowych, aby wiedzieć, jakie działania rolnicze są zalecane.  
 **Kryteria akceptacji:**  
 - Rekomendacja generowana po pobraniu danych.  
-- Czas generacji ≤ 5 s.  
+- Czas generacji ≤ 60 s.  
 - Możliwość oceny rekomendacji jako „użyteczne” lub „nieużyteczne”.  
 
 ---
@@ -165,12 +165,12 @@ Jako administrator chcę otrzymywać powiadomienia e-mail, gdy aplikacja przekra
 
 ## 6. Metryki sukcesu
 
-1. **Liczba użytkowników z aktywnymi stacjami** – wskaźnik adopcji.  
-2. **Liczba stacji pogodowych** – wskaźnik zaangażowania.  
-3. **Liczba wygenerowanych rekomendacji** – miara użycia AI.  
-4. **Odsetek pozytywnych ocen rekomendacji („użyteczne”) ≥ 50%** – wskaźnik jakości AI.  
+1. **10 użytkowników z aktywnymi stacjami** – wskaźnik adopcji.  
+2. **50 stacji pogodowych** – wskaźnik zaangażowania.  
+3. **100 wygenerowanych rekomendacji** – miara użycia AI.  
+4. **Odsetek pozytywnych ocen rekomendacji („użyteczne”) ≥ 75%** – wskaźnik jakości AI.  
 5. **Uptime ≥ 99%** – wskaźnik stabilności.  
-6. **Średni czas generacji rekomendacji ≤ 5 s** – wskaźnik wydajności.  
+6. **Średni czas generacji rekomendacji ≤ 60 s** – wskaźnik wydajności.  
 7. **Error rate ≤ 1%** – wskaźnik niezawodności systemu.
 
 ---
